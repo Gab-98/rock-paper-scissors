@@ -1,6 +1,5 @@
-let randomNumber = Math.floor(Math.random() * 3) + 1
-
 function getComputerChoice(){
+    let randomNumber = Math.floor(Math.random() * 3) + 1
     const computerChoice = 'Computer played: '
 
     if (randomNumber === 1) {
@@ -13,13 +12,13 @@ function getComputerChoice(){
 }
 
 function getHumanChoice(){
-    let humanChoice = prompt('What will you play?')
+    let humanChoice = prompt('What will you play? (Only write rock, paper or scissor. Also, write in lower case only!)')
 
     while (humanChoice !== 'rock' && humanChoice !== 'paper' && humanChoice !== 'scissor'){
-        humanChoice = prompt('Only write rock, paper or scissor. Also, write in lower case only!')
+        humanChoice = prompt('Invalid input')
     }
 
     return 'Human played: ' + humanChoice.toUpperCase()
 }
-console.log(getHumanChoice())
 console.log(getComputerChoice())
+console.log(getHumanChoice())
