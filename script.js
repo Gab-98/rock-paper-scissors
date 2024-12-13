@@ -20,5 +20,5 @@ function getHumanChoice(){
 
     return 'Human played: ' + humanChoice.toUpperCase()
 }
-console.log(getComputerChoice())
 console.log(getHumanChoice())
+console.log(getComputerChoice())
