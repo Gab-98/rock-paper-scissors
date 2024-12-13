@@ -12,13 +12,20 @@ function getComputerChoice(){
 }
 
 function getHumanChoice(){
-    let humanChoice = prompt('What will you play? (Only write rock, paper or scissor. Also, write in lower case only!)')
+    let humanChoice = prompt('What will you play?')
+    const choice1 = 'rock'
+    const choice2 = 'paper'
+    const choice3 = 'scissor'
 
-    while (humanChoice !== 'rock' && humanChoice !== 'paper' && humanChoice !== 'scissor'){
-        humanChoice = prompt('Invalid input')
+    if (humanChoice.toUpperCase() == choice1.toUpperCase()) {
+        return 'Human played: ' + humanChoice.toUpperCase()
+    } else if (humanChoice.toUpperCase() == choice2.toUpperCase()) {
+        return 'Human played: ' + humanChoice.toUpperCase()
+    } else if (humanChoice.toUpperCase() == choice3.toUpperCase()) {
+        return 'Human played: ' + humanChoice.toUpperCase()
+    } else {
+        return 'Invalid choice! Please chooose between rock, paper or scissor.'
     }
-
-    return 'Human played: ' + humanChoice.toUpperCase()
 }
 console.log(getHumanChoice())
 console.log(getComputerChoice())
