@@ -45,7 +45,7 @@ function playRound(humanChoice){
 }
 //Play again after a game ends
 function resetGame() {
-    playerScore = 0;
+    humanScore = 0;
     computerScore = 0;
     document.getElementById('results').innerHTML = "";
     document.getElementById('winner').innerHTML = "";
