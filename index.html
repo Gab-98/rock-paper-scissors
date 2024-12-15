@@ -5,10 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rock Paper Scissors</title>
         <script src="script.js"></script>
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                text-align: center;
+                padding: 20px;
+            }
+            .choices button {
+                margin: 10px;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            #results, #winner {
+                margin-top: 20px;
+                font-size: 18px;
+            }
+        </style>
     </head>
 
     <body>
-        <h1>Play against the computer!</h1>
+        <h1>Play rock, paper, scissors</br>
+            against the computer!</h1>
         <div class="choices">
             <h2>What is your choice?</h2>
             <button onclick="playRound('rock')">ROCK</button>
